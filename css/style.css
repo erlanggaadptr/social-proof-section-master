@@ -8,6 +8,9 @@
 body {
   font-family: var(--font-family);
 }
+p {
+  line-height: 1.5;
+}
 
 .description {
   grid-area: description;
@@ -20,7 +23,7 @@ body {
 }
 
 main {
-  max-width: 68.75rem;
+  max-width: 75rem;
   min-height: 100vh;
   margin: 0 auto;
   align-items: center;
@@ -34,4 +37,80 @@ main {
   'description ratings'
   'reviews reviews';
   grid-gap: 5rem;
+}
+
+.description, 
+.ratings {
+  color: var(--primary-col);
+}
+
+.description {
+  gap: 1rem;
+  padding-right: 6rem;
+}
+.description .desc-heading {
+  font-weight: var(--bold-weight);
+  font-size: 3rem;
+  padding-right: 2.5rem;
+}
+
+.ratings {
+  font-weight: var(--bold-weight);
+  gap: 1rem;
+}
+.rating-box {
+  width: 80%;
+  background: var(--ratings-box-bg-col);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  align-items: center;
+  gap: 2rem;
+}
+.rating-box-2 {
+  align-self: center;
+}
+.rating-box-3 {
+  align-self: flex-end;
+}
+
+.reviews {
+  min-height: 250px;
+  gap: 1rem;
+}
+.review-box {
+  background: var(--primary-col);
+  color: var(--light-text-col);
+  padding: 2rem;
+  border-radius: 5px;
+  gap: 1rem;
+  align-self: flex-start;
+}
+.review-box-2 {
+  align-self: center;
+}
+.review-box-3 {
+  align-self: flex-end;
+}
+
+.reviewer-bio {
+  align-items: center;
+  gap: 1rem;
+}
+.reviewer-img {
+  width: 50px;
+}
+.reviewer-bio .reviewer-img img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+.reviewer-bio .reviewer-info {
+  gap: 0.25rem;
+}
+.reviewer-bio .reviewer-info .reviewer-name {
+  font-weight: var(--medium-weight);
+}
+.reviewer-bio .reviewer-info .reviewer-rank {
+  color: var(--accent-col);
+  font-weight: var(--regular-weight);
 }
