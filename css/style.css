@@ -8,8 +8,22 @@
 body {
   font-family: var(--font-family);
 }
+
 p {
   line-height: 1.5;
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: -1;
+}
+.bg-pattern-top {
+  top: 0;
+  left: 0;
+}
+.bg-pattern-bot {
+  bottom: 0;
+  right: 0;
 }
 
 .description {
