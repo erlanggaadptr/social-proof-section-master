@@ -128,3 +128,39 @@ main {
   color: var(--accent-col);
   font-weight: var(--regular-weight);
 }
+
+@media screen and (max-width: 768px) {
+  .bg-pattern {
+    display: none;
+  }
+
+  .section-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'description'
+    'ratings'
+    'reviews';
+    grid-gap: 2.5rem;
+  }
+
+  .rating-box {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .description {
+    padding-right: 0;
+    text-align: center;
+  }
+  .description .desc-heading {
+    padding-right: 0;
+  }
+}
